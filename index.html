@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Presente Fofo 💝</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffffcc;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+      text-align: center;
+      max-width: 500px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff69b4;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .puzzle {
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Você é muito especial! 🌟</h1>
+    <p>Espero que esse presente traga um sorriso ao seu rosto 💖</p>
+    <button onclick="mostrarQuebraCabeca()">Iniciar Surpresa</button>
+
+    <div id="quebraCabeca" class="puzzle hidden">
+      <p>Monte esse quebra-cabeça com carinho 🧩</p>
+      <img src="https://via.placeholder.com/300x200.png?text=Sua+Imagem+Aqui" alt="Quebra-Cabeça" style="width:100%; border-radius:10px;">
+    </div>
+  </div>
+
+  <script>
+    function mostrarQuebraCabeca() {
+      document.getElementById('quebraCabeca').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
